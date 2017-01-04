@@ -163,7 +163,7 @@ Die Messung wurde mit einer Probe mit $OD = 0.1$ und verschiedenen Laserintensit
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c}
-    I[$\mu W$]      & A[a.u.]  & t[ns]             & $\chi^2$\\
+    I[$\mu$W]      & A[a.u.]  & t[ns]             & $\chi^2$\\
     \hline
     15.9            &  0.19    & 5.44              & 1.42    \\
     77              &  0.19    & 5.42              & 1.42    \\
@@ -185,9 +185,9 @@ Laserintensität für die folgenden Versuche.
 Für diesen Versuchsteil mussten zunächst 5 Proben mit verschiedener optischer Dichte im Bereich
 $0.1$ - $1.5$ hergestellt werden. Hierfür wurde auf der Grundlage, dass die optische Dichte eines Stoffes
 proportional zur Konzentration desselben ist, folgende Formel hergeleitet:
-\begin{equation}
-  \omega = \frac{V_{Pheo}}{V_{Rest}}=\frac{OD_{Probe}}{OD_{Pheo}-OD_{Probe}}
-\end{equation}
+
+$\omega$ = $\frac{V_{Pheo}}{V_{Rest}}$=$\frac{OD_{Probe}}{OD_{Pheo}-OD_{Probe}}$
+
 
 Hierbei ist $OD_x$ die optische Dichte des jeweiligen Stoffes. Für ein Probenvolumen von $2ml$ und eine
 optische Dichte des Pheophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie in Tabelle ZAHL.
@@ -195,7 +195,7 @@ optische Dichte des Pheophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c}
-    $OD_{Probe}$ & \omega & $V_{Pheo}$[\mu l] & $V_{Ethanol}$[\mu l] \\
+    $OD_{Probe}$ & $\omega$ & $V_{Pheo}$[$\mu$l] & $V_{Ethanol}$[$\mu$l] \\
     \hline
     0.1          &  1:23  & 87                & 1913 \\
     0.3          &  1:7   & 250               & 1750 \\
@@ -216,7 +216,7 @@ bei höheren optischer Dichte sinkt, da nun ein Photon zwei Counts verursacht . 
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c}
-    OD           & A[a.u.]& t[ns]             & \chi^2\\
+    OD           & A[a.u.]& t[ns]             & $\chi^2$\\
     \hline
     0.1          &  0.01  & 5.91              & -  \\
     0.3          &  0.54  & 5.44              & 1.66  \\
@@ -262,7 +262,7 @@ Wir setzen in unserer $2ml$ Probe $V_{Pheo}=1ml$, so dass $V_{Rest}=1ml$. Mit $\
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c}
-    \omega & $V_{H_2O}$[\mu l] & $V_{Ethanol}$[\mu l] \\
+    $\omega$ & $V_{H_2O}$ [$\mu$l] & $V_{Ethanol}$ [$\mu$l] \\
     \hline
      5\%   & 950               & 50                   \\
      15\%  & 850               & 150                  \\
@@ -297,9 +297,9 @@ Wir setzen in unserer $2ml$ Probe $V_{Pheo}=1ml$, so dass $V_{Rest}=1ml$. Mit $\
 \begin{figure}
 \begin{tabular}{cc}
   \includegraphics[width=\textwidth/2]{Bilder/FitOD03.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/FitOD07.jpg}\\
-  (a) OD = 0.3, \chi^2=1.66                                 &   (b) OD = 0.7, \chi^2=1.64                               \\
+  (a) OD = 0.3, $\chi^2$=1.66                                 &   (b) OD = 0.7, $\chi^2$=1.64                               \\
   \includegraphics[width=\textwidth/2]{Bilder/FitOD11.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/FitOD15.jpg}\\
-  (c) OD = 1.1, \chi^2=1.79                                 &   (d) OD = 1.5, \chi^2=1.50                               \\
+  (c) OD = 1.1, $\chi^2$=1.79                                 &   (d) OD = 1.5, $\chi^2$=1.50                               \\
 
 \end{tabular}
 \caption{Fits und Residuen des Reabsorptionseffekt}
@@ -311,24 +311,30 @@ Wir setzen in unserer $2ml$ Probe $V_{Pheo}=1ml$, so dass $V_{Rest}=1ml$. Mit $\
 \begin{figure}
 \begin{tabular}{cc}
   \includegraphics[width=\textwidth/2]{Bilder/Fit1509uW.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/Fit7700uW.jpg}\\
-  (a) I = 15.09 \mu W, \chi^2=1.42                            &   (b) I = 77 \mu W, \chi^2=1.42                             \\
+  (a) I = 15.09 $\mu$W, $\chi^2$=1.42                            &   (b) I = 77 $\mu$W, $\chi^2$=1.42                             \\
   \includegraphics[width=\textwidth/2]{Bilder/Fit7900uW.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/Fit9100uW.jpg}\\
-  (c) I = 79 \mu W, \chi^2=2.06                               &   (d) I = 91 \mu W, \chi^2=2.44                             \\
+  (c) I = 79 $\mu$W, $\chi^2$=2.06                               &   (d) I = 91 $\mu$W, $\chi^2$=2.44                             \\
 
 \end{tabular}
 \caption{Fits und Residuen des Peak-Pile-Up-Effekts}
 \end{figure}
 
-
-
+\begin{thebibliography}{50}
+        \bibitem{Hackbarth} Dr. Steffen Hackbarth: \textsl{Versuchsskript: Zeitkorrelierte Einzelphotonenmessung}
+        \bibitem{Röder} Röder et al.: \textsl{Photophysical properties of pheophorbide a in solution and in model membrane systems}
+\end{thebibliography}
 
 
 \newpage
 \section{Literatur}
 
+<<<<<<< HEAD
 \begin{itemize}
   \item[ 1 ] Dr. Steffen Hackbarth: "Versuchsskript: Zeitkorrelierte Einzelphotonenmessung"
   \item[ 2 ] Röder et al.: "Photophysical properties of pheophorbide a in solution and in model membrane systems"
 \end{itemize}
+=======
+
+>>>>>>> master
 
 \end{document}
