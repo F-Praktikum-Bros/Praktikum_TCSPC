@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27148,        752]
-NotebookOptionsPosition[     26733,        733]
-NotebookOutlinePosition[     27089,        749]
-CellTagsIndexPosition[     27046,        746]
+NotebookDataLength[     27283,        755]
+NotebookOptionsPosition[     26871,        736]
+NotebookOutlinePosition[     27224,        752]
+CellTagsIndexPosition[     27181,        749]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -152,8 +152,8 @@ Cell[BoxData[
     RowBox[{"Datay", " ", "=", " ", 
      RowBox[{"Import", "[", 
       RowBox[{
-      "\"\</Users/chegerland/Desktop/TCSPC/Messung/apparatekurve.asc\>\"", 
-       ",", "\"\<List\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Messung/apparatekurve.\
+asc\>\"", ",", "\"\<List\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Datay", " ", "=", " ", 
      RowBox[{"Drop", "[", 
@@ -194,8 +194,9 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-    "SetDirectory", "[", "\"\</Users/chegerland/Desktop/TCSPC/Bilder\>\"", 
-     "]"}], ";"}], "\[IndentingNewLine]", 
+    "SetDirectory", "[", 
+     "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Bilder\>\"", "]"}], ";"}],
+    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Export", "[", 
      RowBox[{"\"\<apparatekurve.jpg\>\"", ",", "Apparat", ",", " ", 
@@ -220,7 +221,8 @@ Cell[BoxData[
    3.691398774689124*^9, 3.691398784662961*^9}, {3.691398848758193*^9, 
    3.691398928755764*^9}, 3.6914181790282516`*^9, {3.6915751746893473`*^9, 
    3.691575178260096*^9}, {3.692090641511969*^9, 3.692090674953411*^9}, {
-   3.6920909738158817`*^9, 3.692090999574361*^9}}],
+   3.6920909738158817`*^9, 3.692090999574361*^9}, {3.692542727625572*^9, 
+   3.692542744215797*^9}}],
 
 Cell[CellGroupData[{
 
@@ -359,8 +361,8 @@ Cell[BoxData[
     RowBox[{"Data", " ", "=", " ", 
      RowBox[{"Import", "[", 
       RowBox[{
-      "\"\</Users/chegerland/Desktop/TCSPC/Messung/7_100prozethanol_fit.txt\>\
-\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Messung/7_100prozethanol_\
+fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Data", " ", "=", " ", 
      RowBox[{"Drop", "[", 
@@ -549,8 +551,9 @@ Cell[BoxData[
     RowBox[{"Plots", " ", "exportieren"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{
-    "SetDirectory", "[", "\"\</Users/chegerland/Desktop/TCSPC/Bilder\>\"", 
-     "]"}], ";"}], "\[IndentingNewLine]", 
+    "SetDirectory", "[", 
+     "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Bilder\>\"", "]"}], ";"}],
+    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Export", "[", 
      RowBox[{"\"\<Fit7_100.jpg\>\"", ",", "Plot1", ",", " ", 
@@ -570,7 +573,7 @@ Cell[BoxData[
    3.6924685653842382`*^9, 3.692468612514716*^9}, {3.6924699457671957`*^9, 
    3.692469978500044*^9}, {3.692470154348675*^9, 3.6924702653975983`*^9}, {
    3.692470315828128*^9, 3.6924703585226393`*^9}, {3.6924703949482803`*^9, 
-   3.6924705931751757`*^9}}],
+   3.6924705931751757`*^9}, {3.692542796736292*^9, 3.692542803776799*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", "2.523534773044697`", "}"}]], "Output",
@@ -731,8 +734,8 @@ Cell[BoxData[
    3.692168562444343*^9, 3.692168588907*^9}, 3.692168748545084*^9, {
    3.692174078383584*^9, 3.6921740830656013`*^9}}]
 },
-WindowSize->{808, 555},
-WindowMargins->{{-25, Automatic}, {27, Automatic}},
+WindowSize->{975, 610},
+WindowMargins->{{5, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (April 11, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -748,12 +751,12 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 7576, 202, 335, "Input"],
+Cell[558, 20, 7644, 204, 335, "Input"],
 Cell[CellGroupData[{
-Cell[8159, 226, 13058, 346, 1100, "Input"],
-Cell[21220, 574, 477, 8, 28, "Output"]
+Cell[8227, 228, 13128, 347, 1032, "Input"],
+Cell[21358, 577, 477, 8, 28, "Output"]
 }, Open  ]],
-Cell[21712, 585, 5017, 146, 199, "Input"]
+Cell[21850, 588, 5017, 146, 182, "Input"]
 }
 ]
 *)
