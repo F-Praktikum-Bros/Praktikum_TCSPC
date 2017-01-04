@@ -31,7 +31,8 @@
 % Latexbilder
 \usepackage{tikz}
 
-
+\bibliographystyle{unsrt} % <- Choose a style. Your document class may do this for you.
+\bibliography{my-biblio}
 
 \begin{document}
 
@@ -326,10 +327,12 @@ Wir setzen in unserer $2ml$ Probe $V_{Pheo}=1ml$, so dass $V_{Rest}=1ml$. Mit $\
 
 
 \section{Literatur}
-
-\begin{thebibliography}{9}
+\begingroup
+\renewcommand{\section}[2]{}
+\begin{thebibliography}{20}
         \bibitem{Hackbarth} Dr. Steffen Hackbarth: \textit{Versuchsskript: Zeitkorrelierte Einzelphotonenmessung}
-        \bibitem{Röder} Röder et al.: \textit{Photophysical properties of pheophorbide a in solution and in model membrane systems}
+        \bibitem{Roeder} Röder et al.: \textit{Photophysical properties of pheophorbide a in solution and in model membrane systems}
 \end{thebibliography}
+\endgroup
 
 \end{document}
