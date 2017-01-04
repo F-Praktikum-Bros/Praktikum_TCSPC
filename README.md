@@ -1,4 +1,3 @@
 # Praktikum_TCSPC
-F-Praktikum zur zeitkorrelierten Einzelphotonenzählung
-
-Das ist ein Github für das F-Praktikum im Physikstudium an der HU Berlin im Jahr 2016.
+Das ist ein Github für das F-Praktikum im Physikstudium an der HU Berlin im Jahr 2017 von Christoph Egerland und Max Pfeifer. 
+Versuch: Zeitkorrelierte Einzelphotonenzählung (TCSPC)
