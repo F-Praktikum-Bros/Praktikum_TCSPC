@@ -1,0 +1,335 @@
+% Dokumentenklasse
+\documentclass{article}
+
+% deutsche Silbentrennung
+\usepackage[ngerman]{babel}
+
+% Tabellenpaket
+\usepackage{tabularx}
+
+% Umlaute
+\usepackage[utf8]{inputenc}
+
+% Fließobjekte
+\usepackage{float}
+
+% Mathepaket
+\usepackage{amsmath}
+
+% Bilder
+\usepackage{graphicx}
+
+% PDFs anhängen
+\usepackage{pdfpages}
+
+%Hyperref
+\usepackage{hyperref}
+
+%Literaturverzeichnis
+\usepackage{cite}
+
+%Latexbilder
+\usepackage{tikz}
+
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+Protokoll zum Fortgeschrittenenpraktikumsversuch\\[2cm]\Huge
+\vfill
+\Huge
+Zeitkorrelierte Einzelphotonenzählung\\[2cm]\Large
+WS 2016/2017 \\
+\vfill
+\normalsize
+\begin{tabular}{lcr}
+Verfasser: &   & Christoph Egerland \\
+Praktikumspartner: &   & Max Pfeifer\\
+Versuchsdatum: &   &  6.12.2016 \\
+Versuchsplatz: &   & NEW15 2'106\\
+Betreuer: &   & Dr. Steffen Hackbarth\\
+\end{tabular}
+\end{titlepage}
+
+\begin{center}
+  \textbf{Abstract}
+\end{center}
+Mit Hilfe der zeitkorrelierten Einzelphotonenzählung (TCSPC) wird in diesem Versuch die Fluoreszenzlebensdauer von Phäophorbid a in Ethanol-Wasser-Gemischen untersucht.
+Hierbei gehen wir insbesondere auf das Verhalten bei unterschiedlichen Konzentrationen, optischen Dichten und
+zusätzlichen Reaktionsagenten (Triton X-100) der Probe ein. Es werden Störeffekte (Peak Pile-Up, Reabsorption) behandelt und quantifiziert.
+Schließlich wird die Einbettung des Phäophorbid in Mizellen durch Messung der Anisotropie nachgewiesen.
+
+\tableofcontents
+\newpage
+
+
+\section{Materialien und Methoden}
+\subsection{Versuchsaufbau}
+Der Versuchsaufbau wird in [1] beschrieben:\\
+"Der Laser emittiert einen gepulsten Laserstrahl, der auf einen halbdurchlässigen Spiegel trifft.
+Dieser teilt den Strahlenweg in zwei Komponenten. Der eine trifft auf eine Referenzdiode. Der
+andere wird mit Hilfe eines $\lambda$/2-Plättchens und eines vertikal orientierten Polarisationsfilters
+abgeschwächt und trifft anschließend auf die Probe. [...] Bei dem Detektor handelt es sich
+um einen Photomultiplier dessen Pulse einen Constant Fraction Discriminator passieren
+müssen, um gemessen zu werden."
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{Bilder/aufbau.jpeg}
+  \caption{Versuchsaufbau}
+\end{figure}
+\\
+\\
+Die Messelektronik stammt von der Firma Becker und Hickl GmbH, wir verwenden das Programm SPC300 dieser Firma.
+
+
+\subsection{Versuchsmethode}
+Die verwendete Versuchsmethode wird wie folgt in [1] beschrieben: \\
+"Mit der TCSPC sollen strahlende optische Übergänge im Bereich vieler ps bis vieler ns
+untersucht werden. Nun entsteht aber wegen der Unschärferelation im Allgemeinen das
+Problem, nicht gleichzeitig schnell und genau messen zu können. Bei der TCSPC wird dieses
+Problem durch die Entkopplung von Detektion und Zeitmessung umgangen. Die Grundidee ist
+hierbei, dass sich eine Vielzahl identischer, nicht wechselwirkender Teilchen (oder Moleküle)
+statistisch genauso verhält wie ein einzelnes Teilchen (oder Molekül)."
+
+
+
+\section{Auswertung und Diskussion}
+\subsection{Optimierung des Messplatzes}
+In diesem Versuchsteil wollen wir eine optimale Konfiguration (optimal bedeutet hier: höchstmögliches
+Signal-Rausch-Verhältnis SNR) erreichen. Wir setzen zunächst eine Streuküvette mit stark verdünntem
+Ludox ein, stellen die Detektorspannung auf $U_D=800V$ und regeln die Laserintensität mit dem Polarisationsfilter so niedrig
+wie möglich. In Tabelle 1 ist das SNR für die verschiedenen Schwellwerte des Constant-Fraction-Discriminators (CFD) dargestellt.
+Wir erreichen das höchste SNR bei: $$CFD_{opt}=30mV$$
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    CFD[mV] & Signal[Counts] & Rauschen[Counts] & SNR \\
+    \hline
+    5       &     -          & -                & -\\
+    10      & 45000          & 200              & 225\\
+    15      & 40000          & 50               & 800\\
+    20      & 30000          & 10               & 3000\\
+    25      & 25000          & 8                & 312.5\\
+    30      & 20000          & 6                & 3333.3\\
+    35      & 15000          & 5                & 3000\\
+    40      & 12000          & 4                & 3000\\
+    45      & 8000           & 3                & 2666.7\\
+    50      & 5200           & 2                & 2600\\
+  \end{tabular}
+  \caption{Ermittlung des optimalen Schwellenwerts CFD bei $U=800V$}
+\end{table}
+
+Nun variieren wir mit festem Schwellwert $CFD_{opt}$ die Detektorspannung. In Tabelle 2 sehen wir analog zu
+Tabelle 1 die Detektorspannung und das daraus resultierende SNR. Wir finden: $$ U_{opt}=800V$$
+
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    U[kV] & Signal[Counts] & Rauschen[Counts] & SNR \\
+    \hline
+    0.6   &     0          & 0                & -\\
+    0.7   &    520         & 2                & 260\\
+    0.8   &  16000         & 5                & 3200\\
+    0.9   &     25000      & 8                & 3125\\
+    1.0   &     10000      & 5                & 2000\\
+  \end{tabular}
+  \caption{Ermittlung der optimalen Spannung bei $CFD_{opt}=30mV$}
+\end{table}
+
+In den folgenden Versuchsteilen werden wir also stets die feste Konfiguration $CFD_{opt}=30mV$ und $ U_{opt}=800V$ verwenden!
+
+\subsubsection{Apparatefunktion}
+Die aufgenommen Apparatefunktion der Streuküvette ist in Abbildung 2 dargestellt. Durch variieren der Countrate ergaben sich
+kleine Variationen in der Halbwertsbreite des Peaks, sowie veränderte Fluktuationen in der auslaufenden Kurve. Es wurde jene Countrate
+gewählt, bei der eine weitere Verringung die Halbwertsbreite nicht weiter verringert. Am Graphen ist diese gut zu sehen:
+$$Countrate \approx \mathcal{O}(10^4)$$
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{Bilder/apparatekurve.jpg}
+  \caption{Apparatekurve}
+\end{figure}
+
+
+
+\subsubsection{Peak-Pile-Up-Effekt}
+Unter dem Peak-Pile-Up-Effekt versteht man, dass zwei Photonen nicht als zwei separate Events registriert werden. Wir erwarten,
+dass bei höherer Laserintensität zum einen die Amplitude $A$ größer wird und dass die Fluoreszenzlebensdauer $t$ abnimmt, da es bei
+höheren Intensitäten wahrscheinlicher ist, dass zwei Photonen als ein Ereignis gezählt werden und somit nicht doppelt zur Kurve beitragen.
+Die Messung wurde mit einer Probe mit $OD = 0.1$ und verschiedenen Laserintensitäten durchgeführt.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    I[\mu W]      & A[a.u.]  & t[ns]             & \chi^2\\
+    \hline
+    15.9          &  0.19    & 5.44              & 1.42  \\
+    77            &  0.19    & 5.42              & 1.42  \\
+    79            &  1.06    & 5.38              & 2.06  \\
+    91            &  1.24    & 5.44              & 2.24  \\
+  \end{tabular}
+  \caption{Messung des Peak-Pile-Up-Effekts}
+\end{table}
+
+
+Die Ergebnisse der Messung sind in Tabelle 3 aufgeführt. Die Fits zeigen eine gute Übereinstimmung zum Modell ($\chi^2-Werte < 2.3$)
+und die oben beschriebenen Erwartungen werden bestätigt. Die Halbwertszeit nimmt mit zunehmender Intensität ab, die Amplitude steigt.
+Allerdings liegt die Schwankung lediglich in der Fehlerordnung und ist somit also zu vernachlässigen. Wir wählen $I = 77 \mu W$ als
+Laserintensität für die folgenden Versuche.
+
+
+
+\subsubsection{Reabsorption}
+Für diesen Versuchsteil mussten zunächst 5 Proben mit verschiedener optischer Dichte im Bereich
+$0.1$ - $1.5$ hergestellt werden. Hierfür wurde auf der Grundlage, dass die optische Dichte eines Stoffes
+proportional zur Konzentration desselben ist, folgende Formel hergeleitet:
+\begin{equation}
+  \omega = \frac{V_{Pheo}}{V_{Rest}}=\frac{OD_{Probe}}{OD_{Pheo}-OD_{Probe}}
+\end{equation}
+
+Hierbei ist $OD_x$ die optische Dichte des jeweiligen Stoffes. Für ein Probenvolumen von $2ml$ und eine
+optische Dichte des Pheophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie in Tabelle ZAHL.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    $OD_{Probe}$ & \omega & $V_{Pheo}$[\mu l] & $V_{Ethanol}$[\mu l] \\
+    \hline
+    0.1          &  1:23  & 87                & 1913 \\
+    0.3          &  1:7   & 250               & 1750 \\
+    0.7          &  7:17  & 583               & 1417 \\
+    1.1          &  11:13 & 917               & 1083 \\
+    1.5          &  5:3   & 1250              & 750  \\
+  \end{tabular}
+  \caption{Mischung der Proben für verschiedene optische Dichten}
+\end{table}
+
+
+
+Unter Reabsorption versteht man, dass ein absorbiertes und wieder abgestrahltes Photon erneut absorbiert und emmitiert wird.
+Wir erwarten also, da bei höheren optischer Dichte die Wahrscheinlichkeit für einen solchen Fall höher ist, dass die Fluoreszenzlebensdauer
+bei höheren optischer Dichte sinkt, da nun ein Photon zwei Counts verursacht . Die Ergebnisse der Messung befinden sich in Tabelle 5.
+
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c|c}
+    OD           & A[a.u.]& t[ns]             & \chi^2\\
+    \hline
+    0.1          &  0.01  & 5.91              & -  \\
+    0.3          &  0.54  & 5.44              & 1.66  \\
+    0.7          &  0.59  & 5.54              & 1.64  \\
+    1.1          &  0.63  & 5.62              & 1.79  \\
+    1.5          &  0.27  & 5.86              & 1.50   \\
+  \end{tabular}
+  \caption{Messung Reabsorptionseffekt}
+\end{table}
+
+
+Die Fits zeigen wieder gute Übereinstimmung mit dem Modell ($\chi^2-Werte <2$) und unsere Erwartungen bestätigen sich deutlich.
+Die Fluoreszenzlebensdauer steigt bei höheren Dichte um bis zu 8\% an. Im Folgenden werden wir also $OD = 0.2$ wählen.
+
+
+
+
+\subsection{Fluoreszenzlebensdauer von Pheo}
+Nun wird die FLuoreszenzlebensdauer bei den optimalen Einstellung bestimmt. Diese sind noch einmal zusammengefasst:
+
+\begin{itemize}
+  \item CFD-Spannung: $CFD_{opt}=30mV$
+  \item Detektorspannung: $U_D=800V$
+  \item Laserintensität: $I=77\mu W$
+  \item optische Dichte der Probe: $OD=0.2$
+\end{itemize}
+
+Die Fluoreszenzlebensdauer ist: $$t=(5.9 \pm 0.1)ns$$
+Diese stimmt sehr gut mit dem Referenzwert in [2] überein (ebenfalls $t=(5.9 \pm 0.1)ns$). Auch der $\chi^2$-Wert weißt auf
+eine sehr gute Übereinstimmung mit dem Modell hin.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{Bilder/messung_opt.jpg}
+  \caption{Mess- und Fitkurve für optimale Einstellung, Fitparameter: $t=5.91ns$, $A=0.001[a.u.]$, $\chi^2=1.24$}
+\end{figure}
+
+
+\subsection{Pheo in versch. Ethanol-Wasser-Gemischen}
+Für diesen Versuchsteil stellen wir 7 Proben mit verschiedenem Ethanol-Wasser-Verhältnis her.
+Wir setzen in unserer $2ml$ Probe $V_{Pheo}=1ml$, so dass $V_{Rest}=1ml$. Mit $\omega= \frac{V_{Ethanol}}{V_{Rest}}$ erhalten wir:
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{c|c|c}
+    \omega & $V_{H_2O}$[\mu l] & $V_{Ethanol}$[\mu l] \\
+    \hline
+     5\%   & 950               & 50                   \\
+     15\%  & 850               & 150                  \\
+     30\%  & 700               & 300                  \\
+     45\%  & 550               & 450                  \\
+     60\%  & 400               & 600                  \\
+     75\%  & 250               & 750                  \\
+     100\% & 0                 & 1000                 \\
+
+  \end{tabular}
+  \caption{Mischung für verschiedene Verhältnisse Ethanol:Wasser}
+\end{table}
+
+\subsection{Einbettung in Mizellen / Triton X-100}
+
+\subsubsection{Wirkungsweise von Triton X-100}
+
+\subsubsection{Anisotropie}
+
+
+
+
+
+\section{Schlussfolgerungen}
+
+
+
+\section{Anhang}
+
+\subsection{Plots für Reabsorptionseffekt}
+
+\begin{figure}
+\begin{tabular}{cc}
+  \includegraphics[width=\textwidth/2]{Bilder/FitOD03.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/FitOD07.jpg}\\
+  (a) OD = 0.3, \chi^2=1.66                                 &   (b) OD = 0.7, \chi^2=1.64                               \\
+  \includegraphics[width=\textwidth/2]{Bilder/FitOD11.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/FitOD15.jpg}\\
+  (c) OD = 1.1, \chi^2=1.79                                 &   (d) OD = 1.5, \chi^2=1.50                               \\
+
+\end{tabular}
+\caption{Fits und Residuen des Reabsorptionseffekt}
+\end{figure}
+
+
+\subsection{Plots für Peak-Pile-Up-Effekt}
+
+\begin{figure}
+\begin{tabular}{cc}
+  \includegraphics[width=\textwidth/2]{Bilder/Fit1509uW.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/Fit7700uW.jpg}\\
+  (a) I = 15.09 \mu W, \chi^2=1.42                            &   (b) I = 77 \mu W, \chi^2=1.42                             \\
+  \includegraphics[width=\textwidth/2]{Bilder/Fit7900uW.jpg}  &   \includegraphics[width=\textwidth/2]{Bilder/Fit9100uW.jpg}\\
+  (c) I = 79 \mu W, \chi^2=2.06                               &   (d) I = 91 \mu W, \chi^2=2.44                             \\
+
+\end{tabular}
+\caption{Fits und Residuen des Peak-Pile-Up-Effekts}
+\end{figure}
+
+
+
+
+
+\newpage
+\section{Literatur}
+
+\begin{itemize}
+  \item[ (1) ] Dr. Steffen Hackbarth: "Versuchsskript: Zeitkorrelierte Einzelphotonenmessung"
+  \item[ (2) ] Röder et al.: "Photophysical properties of pheophorbide a in solution and in model membrane systems"
+\end{itemize}
+
+\end{document}
