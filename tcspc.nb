@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30484,        841]
-NotebookOptionsPosition[     30072,        822]
-NotebookOutlinePosition[     30425,        838]
-CellTagsIndexPosition[     30382,        835]
+NotebookDataLength[     30528,        842]
+NotebookOptionsPosition[     30116,        823]
+NotebookOutlinePosition[     30469,        839]
+CellTagsIndexPosition[     30426,        836]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -361,8 +361,8 @@ Cell[BoxData[
     RowBox[{"Data", " ", "=", " ", 
      RowBox[{"Import", "[", 
       RowBox[{
-      "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Messung/7_100prozethanol_\
-fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Messung/8_fit.txt\>\"", 
+       ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Data", " ", "=", " ", 
      RowBox[{"Drop", "[", 
@@ -556,7 +556,7 @@ fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]",
     "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Export", "[", 
-     RowBox[{"\"\<Fit7_100.jpg\>\"", ",", "Plot1", ",", " ", 
+     RowBox[{"\"\<FitTriton.jpg\>\"", ",", "Plot1", ",", " ", 
       RowBox[{"ImageResolution", "\[Rule]", " ", "300"}]}], "]"}], ";"}], 
    "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.691396692331115*^9, 3.6913967099809113`*^9}, 
@@ -573,7 +573,8 @@ fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]",
    3.6924685653842382`*^9, 3.692468612514716*^9}, {3.6924699457671957`*^9, 
    3.692469978500044*^9}, {3.692470154348675*^9, 3.6924702653975983`*^9}, {
    3.692470315828128*^9, 3.6924703585226393`*^9}, {3.6924703949482803`*^9, 
-   3.6924705931751757`*^9}, {3.692542796736292*^9, 3.692542803776799*^9}}],
+   3.6924705931751757`*^9}, {3.692542796736292*^9, 3.692542803776799*^9}, {
+   3.6926006517606487`*^9, 3.692600666811899*^9}}],
 
 Cell[BoxData[
  RowBox[{"{", "2.523534773044697`", "}"}]], "Output",
@@ -839,10 +840,10 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 7644, 204, 335, "Input"],
 Cell[CellGroupData[{
-Cell[8227, 228, 13128, 347, 1032, "Input"],
-Cell[21358, 577, 477, 8, 28, "Output"]
+Cell[8227, 228, 13172, 348, 1032, "Input"],
+Cell[21402, 578, 477, 8, 28, "Output"]
 }, Open  ]],
-Cell[21850, 588, 8218, 232, 505, "Input"]
+Cell[21894, 589, 8218, 232, 505, "Input"]
 }
 ]
 *)
