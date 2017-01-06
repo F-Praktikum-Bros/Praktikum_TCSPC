@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     27283,        755]
-NotebookOptionsPosition[     26871,        736]
-NotebookOutlinePosition[     27224,        752]
-CellTagsIndexPosition[     27181,        749]
+NotebookDataLength[     30873,        849]
+NotebookOptionsPosition[     30461,        830]
+NotebookOutlinePosition[     30814,        846]
+CellTagsIndexPosition[     30771,        843]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -361,8 +361,8 @@ Cell[BoxData[
     RowBox[{"Data", " ", "=", " ", 
      RowBox[{"Import", "[", 
       RowBox[{
-      "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Messung/7_100prozethanol_\
-fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Messung/8_fit.txt\>\"", 
+       ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Data", " ", "=", " ", 
      RowBox[{"Drop", "[", 
@@ -371,6 +371,11 @@ fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]",
    RowBox[{"(*", 
     RowBox[{"Data1", " ", "ist", " ", "die", " ", "Messkurve"}], "*)"}], 
    "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"f\[UDoubleDot]r", " ", "Peak"}], "-", "Pile", "-", "Up", " ", 
+      "-", "584"}], ",", " ", "218"}], "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Data1", " ", "=", " ", 
      RowBox[{"Drop", "[", 
@@ -556,7 +561,7 @@ fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]",
     "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Export", "[", 
-     RowBox[{"\"\<Fit7_100.jpg\>\"", ",", "Plot1", ",", " ", 
+     RowBox[{"\"\<FitTriton.jpg\>\"", ",", "Plot1", ",", " ", 
       RowBox[{"ImageResolution", "\[Rule]", " ", "300"}]}], "]"}], ";"}], 
    "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.691396692331115*^9, 3.6913967099809113`*^9}, 
@@ -573,17 +578,20 @@ fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]",
    3.6924685653842382`*^9, 3.692468612514716*^9}, {3.6924699457671957`*^9, 
    3.692469978500044*^9}, {3.692470154348675*^9, 3.6924702653975983`*^9}, {
    3.692470315828128*^9, 3.6924703585226393`*^9}, {3.6924703949482803`*^9, 
-   3.6924705931751757`*^9}, {3.692542796736292*^9, 3.692542803776799*^9}}],
+   3.6924705931751757`*^9}, {3.692542796736292*^9, 3.692542803776799*^9}, {
+   3.6926006517606487`*^9, 3.692600666811899*^9}, {3.6926007120634327`*^9, 
+   3.692600820459848*^9}}],
 
 Cell[BoxData[
- RowBox[{"{", "2.523534773044697`", "}"}]], "Output",
+ RowBox[{"{", "2.9401097811780894`", "}"}]], "Output",
  CellChangeTimes->{
   3.692465176337306*^9, {3.692468570149241*^9, 3.692468613488948*^9}, 
    3.6924699825975323`*^9, 3.69247003543231*^9, 3.692470158530747*^9, {
    3.692470203155406*^9, 3.692470242620515*^9}, {3.692470316452565*^9, 
    3.692470359444013*^9}, {3.692470396982025*^9, 3.692470421372064*^9}, {
    3.69247045431113*^9, 3.6924704670141783`*^9}, {3.69247050376956*^9, 
-   3.6924705938067017`*^9}}]
+   3.6924705938067017`*^9}, 3.692600675714686*^9, {3.6926007284026117`*^9, 
+   3.692600809256811*^9}, 3.6926008548018303`*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -721,10 +729,94 @@ Cell[BoxData[
         RowBox[{"0.75", ",", "6.1"}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{"1", ",", "6.25"}], "}"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Data51", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.15", ",", "5.9"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.3", ",", "6.01"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.45", ",", "6.11"}], "}"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Data52", " ", "=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0.6", ",", "6.06"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0.75", ",", "6.1"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"1", ",", "6.25"}], "}"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"lm1", " ", "=", " ", 
+     RowBox[{"LinearModelFit", "[", 
+      RowBox[{"Data51", ",", "x", ",", "x"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"lm2", " ", "=", " ", 
+     RowBox[{"LinearModelFit", "[", 
+      RowBox[{"Data52", ",", "x", ",", "x"}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", "Plot", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{"ListPlot", "[", "Data5", "]"}], ";"}]}]}]], "Input",
+    RowBox[{"Plot2", " ", "=", " ", 
+     RowBox[{"ListPlot", "[", 
+      RowBox[{"Data5", ",", 
+       RowBox[{"ImageSize", "\[Rule]", "Full"}], ",", " ", 
+       RowBox[{"AxesLabel", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<Ethanolanteil\>\"", ",", " ", 
+            RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}], ",", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<t in ns\>\"", ",", " ", 
+            RowBox[{"FontSize", "\[Rule]", "14"}]}], "]"}]}], "}"}]}], ",", 
+       " ", 
+       RowBox[{"AxesStyle", "\[Rule]", "Thick"}], ",", " ", 
+       RowBox[{"TicksStyle", "\[Rule]", 
+        RowBox[{"Directive", "[", 
+         RowBox[{"FontSize", "->", "14"}], "]"}]}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plot3", " ", "=", " ", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"lm1", "[", "x", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0", ",", "0.5"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Plot4", " ", "=", " ", 
+     RowBox[{"Plot", "[", 
+      RowBox[{
+       RowBox[{"lm2", "[", "x", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"x", ",", "0.5", ",", "1"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"PlotEthH2O", "=", 
+     RowBox[{"Show", "[", 
+      RowBox[{"Plot2", ",", "Plot3", ",", "Plot4"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Plots", " ", "exportieren"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "SetDirectory", "[", 
+     "\"\</Users/chegerland/Desktop/Praktikum_TCSPC/Bilder\>\"", "]"}], ";"}],
+    "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Export", "[", 
+     RowBox[{"\"\<FitEthH2O.jpg\>\"", ",", "PlotEthH2O", ",", " ", 
+      RowBox[{"ImageResolution", "\[Rule]", " ", "300"}]}], "]"}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]"}]}]], "Input",
  CellChangeTimes->{{3.692160866231398*^9, 3.6921610765414553`*^9}, {
    3.692161195585876*^9, 3.692161328140553*^9}, 3.692161386553142*^9, {
    3.692161429604245*^9, 3.692161489912609*^9}, {3.692161532384848*^9, 
@@ -732,7 +824,9 @@ Cell[BoxData[
    3.6921617697766647`*^9, 3.692161815663994*^9}, {3.69216805373105*^9, 
    3.692168070549094*^9}, {3.692168408362893*^9, 3.692168486770803*^9}, {
    3.692168562444343*^9, 3.692168588907*^9}, 3.692168748545084*^9, {
-   3.692174078383584*^9, 3.6921740830656013`*^9}}]
+   3.692174078383584*^9, 3.6921740830656013`*^9}, {3.692591675916945*^9, 
+   3.692591729342969*^9}, {3.692591932195134*^9, 3.692592116033963*^9}, {
+   3.6925921471624002`*^9, 3.692592206425027*^9}}]
 },
 WindowSize->{975, 610},
 WindowMargins->{{5, Automatic}, {Automatic, 0}},
@@ -753,10 +847,10 @@ CellTagsIndex->{}
 Notebook[{
 Cell[558, 20, 7644, 204, 335, "Input"],
 Cell[CellGroupData[{
-Cell[8227, 228, 13128, 347, 1032, "Input"],
-Cell[21358, 577, 477, 8, 28, "Output"]
+Cell[8227, 228, 13418, 354, 1049, "Input"],
+Cell[21648, 584, 576, 9, 28, "Output"]
 }, Open  ]],
-Cell[21850, 588, 5017, 146, 182, "Input"]
+Cell[22239, 596, 8218, 232, 505, "Input"]
 }
 ]
 *)
