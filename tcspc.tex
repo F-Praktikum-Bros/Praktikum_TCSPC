@@ -221,7 +221,7 @@ optische Dichte des Pheophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie
 
 Unter Reabsorption versteht man, dass ein absorbiertes und wieder abgestrahltes Photon erneut absorbiert und emmitiert wird.
 Wir erwarten also, da bei höheren optischer Dichte die Wahrscheinlichkeit für einen solchen Fall höher ist, dass die Fluoreszenzlebensdauer
-bei höheren optischer Dichte sinkt, da nun ein Photon zwei Counts verursacht . Die Ergebnisse der Messung befinden sich in Tabelle 5.
+bei höheren optischer Dichte steigt, da nun ein Photon zwei Counts verursacht. Die Ergebnisse der Messung befinden sich in Tabelle 5.
 
 
 \begin{table}[h]
@@ -310,6 +310,19 @@ Reabsorptionseffekt eine wesentliche Rolle spielt.
 macht." ([1]) Wir geben nun zu der Probe mit höchstem Wasseranteil 2 Tropfen einer $10\%$igen Stammlösung Triton X-100
 hinzu und erwarten, dass hierdurch die Fluoreszenzdauer wieder auf das optimale Niveau wie in Abschnitt 2.2 ansteigt.
 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth/2]{Bilder/FitTriton.jpg}
+  \caption{Messung der Fluoreszenzlebensdauer mit Triton X-100, $t = 5.97ns$, $A = 0.26[a.u.]$, $\chi^2 = 2.94$}
+\end{figure}
+
+Die Fluoreszenzlebensdauer ist, wie nach Erwartung angestiegen, allerdings über die Fluoreszenzdauer in 2.2 hinaus. Dies liegt daran, dass
+die Probe eine optische Dichte von $OD = 1.5$, der Reabsorptionseffekt trägt hier, wie in Abschnitt ZAHL gezeigt, eine tragende Rolle. Dies war
+eine für präzise Messergebnisse ungünstige Wahl der Experimentatoren. Ebenso schlägt sich dies in einem (im Vergleich zu allen anderen Fits)
+schlechten Chi2-Wert von $\chi^2=2.94$ nieder. Nichtsdestotrotz zeigt die Messung, dass Phäophorbid a durch das Triton X-100 wieder fluoresziert.
+
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth/2]{Bilder/FitTriton.jpg}
@@ -325,7 +338,7 @@ schlechten Chi2-Wert von $\chi^2=2.94$ nieder. Nichtsdestotrotz zeigt die Messun
 
 
 \subsubsection{Anisotropie}
-Werden Fluorophore mit linear polarisiertem Licht bestrahlt absorbieren bevorzugt Moleküle, bei denen der Winkel zwischen Übergangsdipolmoment und Polarisationsebene des einfallenden Lichts klein ist. Dies führt i.A. dazu, dass das durch Fluoreszenz emittierte Licht ebenso linear polarisiert ist - die sog. Fluoreszenzpolarisation. Diese intrinsische Anisotropie ist als Maß für den Grad der Polarisation des Emissionslichts abhängig von den Intensitäten des parallel bzw. senkrecht polarisierten Fluoreszenzlichts. $$ r = \frac{I_\parallel-I_\perp}{I_\parallel+2 I_\perp} $$ Zur quantitativen Bestimmung werden jene Polarisationsintensitäten bei fester (linearer) Polarisation des einfallenden Lichts gemessen. Die sog. Rotationsabklingzeit $\tau_{Rot}$ bestimmt gemäß eines exponentiellen Abfalls maßgeblich den zeitlichen Abfall der Anisotropie. Sie ist, neben der Viskosität und Temperatur, v.a. von der Molekülgröße (Volumen) abhängig. Es wurden zwei Proben untersucht: Pheo in Ethanol und Pheo in einem Wasser/Triton-Gemisch.
+Werden Fluorophore mit linear polarisiertem Licht bestrahlt absorbieren bevorzugt Moleküle, bei denen der Winkel zwischen Übergangsdipolmoment und Polarisationsebene des einfallenden Lichts klein ist. Dies führt i.A. dazu, dass das durch Fluoreszenz emittiertes Licht ebenso linear polarisiert ist - die sog. Fluoreszenzpolarisation. Diese intrinsische Anisotropie ist als Maß für den Grad der Polarisation des Emissionslichts abhängig von den Intensitäten des parallel bzw. senkrecht polarisierten Fluoreszenzlichts. $$ r = \frac{I_\parallel-I_\perp}{I_\parallel+2 I_\perp} $$ Zur quantitativen Bestimmung werden jene Polarisationsintensitäten bei fester (linearer) Polarisation des einfallenden Lichts gemessen. Die sog. Rotationsabklingzeit $\tau_{Rot}$ bestimmt gemäß eines exponentiellen Abfalls maßgeblich den zeitlichen Abfall der Anisotropie. Sie ist, neben der Viskosität und Temperatur, v.a. von der Molekülgröße (Volumen) abhängig. Es wurden zwei Proben untersucht: Pheo in Ethanol und Pheo in einem Wasser/Triton-Gemisch.
 
 \begin{figure}[H]
   \centering
@@ -333,7 +346,7 @@ Werden Fluorophore mit linear polarisiertem Licht bestrahlt absorbieren bevorzug
   \caption{Messung der Anisotropie von Phäophorbid a mit Ethanol}
 \end{figure}
 
-Deutlich zu erkennen auf den Abb. 5 und 6 sind die beiden Anisotropie-Peaks bei den Fluoreszenzereignissen und der exponentielle Charakter des Abklingens der Anisotropie.
+Deutlich zu erkennen auf den Abb. 6 und 7 sind die beiden Anisotropie-Peaks bei den Fluoreszenzereignissen und der exponentielle Charakter des Abklingens der Anisotropie.
 
 \begin{figure}[H]
   \centering
@@ -341,11 +354,13 @@ Deutlich zu erkennen auf den Abb. 5 und 6 sind die beiden Anisotropie-Peaks bei 
   \caption{Messung der Anisotropie von Phäophorbid a mit einem Triton/Wasser-Gemisch}
 \end{figure}
 
+
 \newpage
 
-Den Erwartungen entsprechend ist die Abklingzeit der Anisotropie bei der Probe mit Ethanol (Abb. 5) kürzer als bei jener mit dem Triton/Wasser-Gemisch (Abb. 6). Die Rotationsabklingzeit $\tau_{Rot}$ nimmt gemäß $$ \tau_{Rot}=\frac{\eta V}{k_B T} $$ 
-mit größerem Volumen zu, wohingegen die Anisotropieabklingzeit nach $$ r= c \cdot e^{-\nicefrac{t}{\tau_{Rot}}}+d $$ 
+Den Erwartungen entsprechend ist die Abklingzeit der Anisotropie bei der Probe mit Ethanol (Abb. 5) kürzer als bei jener mit dem Triton/Wasser-Gemisch (Abb. 6). Die Rotationsabklingzeit $\tau_{Rot}$ nimmt gemäß $$ \tau_{Rot}=\frac{\eta V}{k_B T} $$
+mit größerem Volumen zu, wohingegen die Anisotropieabklingzeit nach $$ r= c \cdot e^{-\nicefrac{t}{\tau_{Rot}}}+d $$
 invers proportional zur Rotationsabklingzeit ist. Das kürzere Abklingen der Anisotropie von Pheo in Wasser/Triton als in Ethanol spricht also für eine längere Rotationsabklingzeit und damit für ein größeres Volumen der fluoreszierenden Moleküle. Dies weist deutlich auf die erwartete Einbettung von Pheo in Mizellen im Wasser/Triton-Gemisch hin.
+
 
 
 \section{Schlussfolgerungen}
@@ -353,11 +368,14 @@ Der ermittelte Basiswert für die Fluoreszenzlebensdauer von $t=(5.9 \pm 0.1)$ n
 
 Die auftretenden Störeffekte (Peak-Pile-Up, Reabsorption) konnten qualitativ nachgewiesen werden.
 
+
 Die im Rahmen der Untersuchungen zur Löslichkeit von Phäophorbid a in Wasser/Ethanol-Gemischen ermittelten Fluoreszenzlebensdauern (Abs. 2.3) zeigen deutlich die hydrophobe Eigenschaft des Fluorophors. Dabei hätte man bei der Probe mit maximalem Wasseranteil keine Fluoreszenz bzw. zumindest eine deutlich niedrigere Fluoreszenzlebensdauer erwartet. Jedoch verschwindet die Fluoreszenzlebensdauer aufgrund der ungünstigen Wahl der Volumenaufteilung in der Probe (1 ml Phäophorbid a, 1 ml Wasser/Ethanol) nicht.
 
 Die Zugabe von Triton X-100 zur Probe mit maximalem Wasseranteil lässt die Fluoreszenzlebensdauer ansteigen und entspricht damit den theoretischen Erwartungen (Mizellenbildung). Wie zuvor (Abs. 2.4.1) erwähnt, hätte die Verwendung einer Probe geringerer optischer Dichte geringere Reabsorptionseffekte und damit eine vom Referenzwert weniger abweichende Fluoreszenzlebensdauer ergeben.
 
 Die Anisotropieverhalten von Phäo in Ethanol und Phäo in Triton X-100 (Abs. 2.4.2) lassen auf Mizellenbildung schließen.
+
+
 
 
 \section{Anhang}
