@@ -1,0 +1,107 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      3128,         99]
+NotebookOptionsPosition[      2663,         79]
+NotebookOutlinePosition[      3011,         94]
+CellTagsIndexPosition[      2968,         91]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Data", " ", "=", " ", 
+   RowBox[{"Import", "[", 
+    RowBox[{
+    "\"\<D:\\doc\\physik\\FPR\\Zeitkorrelierte \
+Einzelphotonenz\[ADoubleDot]hlung\\Praktikum_TCSPC-Christophs_Branch\\Messung\
+\\5_2_0k2 od_fit.txt\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.692628207270034*^9, 3.692628241802165*^9}, {
+  3.6926287019701767`*^9, 3.6926287030811157`*^9}},
+ EmphasizeSyntaxErrors->True],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Data", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{"Data", ",", "13"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6926282730372305`*^9, 3.6926282965778065`*^9}, 
+   3.6926283746350827`*^9, {3.6926284131936026`*^9, 3.6926284145451965`*^9}, 
+   3.6926285456498823`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Data", " ", "=", " ", 
+   RowBox[{"Drop", "[", 
+    RowBox[{"Data", ",", " ", 
+     RowBox[{"-", "477"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.6926283779769573`*^9, 3.6926284097955637`*^9}, {
+  3.6926284986097565`*^9, 3.692628560034131*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Data", "=", 
+   RowBox[{"Transpose", "[", "Data", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Data", "=", 
+   RowBox[{"Drop", "[", 
+    RowBox[{"Data", ",", "5"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6926285759504614`*^9, 3.692628582465793*^9}, {
+  3.6926286151306295`*^9, 3.6926286504892426`*^9}, {3.692628713857788*^9, 
+  3.6926287287613993`*^9}, {3.6926287673299685`*^9, 3.692628770345989*^9}, {
+  3.6926288105218368`*^9, 3.6926288263850193`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"Data", "=", 
+   RowBox[{"Transpose", "[", "Data", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"StandardDeviation", "[", "Data", "]"}]}], "Input",
+ CellChangeTimes->{{3.692628653950447*^9, 3.6926286732577934`*^9}, {
+  3.692628788233558*^9, 3.69262879392272*^9}, {3.6926288442425404`*^9, 
+  3.692628850906229*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "1.2114987263484398`", "}"}]], "Output",
+ CellChangeTimes->{{3.692628851609128*^9, 3.6926288752259045`*^9}}]
+}, Open  ]]
+},
+WindowSize->{775, 872},
+WindowMargins->{{262, Automatic}, {49, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 451, 10, 125, "Input"],
+Cell[1012, 32, 307, 7, 47, "Input"],
+Cell[1322, 41, 289, 7, 47, "Input"],
+Cell[1614, 50, 516, 11, 84, "Input"],
+Cell[CellGroupData[{
+Cell[2155, 65, 353, 7, 84, "Input"],
+Cell[2511, 74, 136, 2, 30, "Output"]
+}, Open  ]]
+}
+]
+*)
+
