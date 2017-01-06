@@ -89,7 +89,7 @@ müssen, um gemessen zu werden."
 \end{figure}
 \\
 \\
-Die Messelektronik stammt von der Firma Becker und Hickl GmbH, wir verwenden das Programm SPC300 dieser Firma.
+Die Messelektronik stammt von der Firma Becker und Hickl GmbH. Wir verwenden das Programm SPC300 dieser Firma.
 
 
 \subsection{Versuchsmethode}
@@ -105,14 +105,14 @@ statistisch genauso verhält wie ein einzelnes Teilchen (oder Molekül)."
 \subsection{Optimierung des Messplatzes}
 In diesem Versuchsteil wollen wir eine optimale Konfiguration (optimal bedeutet hier: höchstmögliches
 Signal-Rausch-Verhältnis SNR) erreichen. Wir setzen zunächst eine Streuküvette mit stark verdünntem
-Ludox ein, stellen die Detektorspannung auf $U_D=800V$ und regeln die Laserintensität mit dem Polarisationsfilter so niedrig
+Ludox ein, stellen die Detektorspannung auf $U_D=800$ V und regeln die Laserintensität mit dem Polarisationsfilter so niedrig
 wie möglich. In Tabelle 1 ist das SNR für die verschiedenen Schwellwerte des Constant-Fraction-Discriminators (CFD) dargestellt.
-Wir erreichen das höchste SNR bei: $$CFD_{opt}=30mV$$
+Wir erreichen das höchste SNR bei: $$CFD_{opt}=30 mV$$
 
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c|c}
-    CFD[mV] & Signal[Counts] & Rauschen[Counts] & SNR \\
+    CFD [mV] & Signal [Counts] & Rauschen [Counts] & SNR \\
     \hline
     5       &     -          & -                & -\\
     10      & 45000          & 200              & 225\\
@@ -125,11 +125,11 @@ Wir erreichen das höchste SNR bei: $$CFD_{opt}=30mV$$
     45      & 8000           & 3                & 2666.7\\
     50      & 5200           & 2                & 2600\\
   \end{tabular}
-  \caption{Ermittlung des optimalen Schwellenwerts CFD bei $U=800V$}
+  \caption{Ermittlung des optimalen Schwellenwerts CFD bei $U=800$ V}
 \end{table}
 
 Nun variieren wir mit festem Schwellwert $CFD_{opt}$ die Detektorspannung. In Tabelle 2 sehen wir analog zu
-Tabelle 1 die Detektorspannung und das daraus resultierende SNR. Wir finden: $$ U_{opt}=800V$$
+Tabelle 1 die Detektorspannung und das daraus resultierende SNR. Wir finden: $$ U_{opt}=800 V$$
 
 
 \begin{table}[h]
@@ -143,10 +143,10 @@ Tabelle 1 die Detektorspannung und das daraus resultierende SNR. Wir finden: $$ 
     0.9   &     25000      & 8                & 3125\\
     1.0   &     10000      & 5                & 2000\\
   \end{tabular}
-  \caption{Ermittlung der optimalen Spannung bei $CFD_{opt}=30mV$}
+  \caption{Ermittlung der optimalen Spannung bei $CFD_{opt}=30$ mV}
 \end{table}
 
-In den folgenden Versuchsteilen werden wir also stets die feste Konfiguration $CFD_{opt}=30mV$ und $ U_{opt}=800V$ verwenden!
+In den folgenden Versuchsteilen werden wir also stets die feste Konfiguration $CFD_{opt}=30$ mV und $ U_{opt}=800$ V verwenden.
 
 \subsubsection{Apparatefunktion}
 Die aufgenommen Apparatefunktion der Streuküvette ist in Abbildung 2 dargestellt. Durch variieren der Countrate ergaben sich
@@ -184,7 +184,7 @@ Die Messung wurde mit einer Probe mit $OD = 0.1$ und verschiedenen Laserintensit
 
 Die Ergebnisse der Messung sind in Tabelle 3 aufgeführt. Die Fits zeigen eine gute Übereinstimmung zum Modell ($\chi^2-Werte < 2.3$)
 und die oben beschriebenen Erwartungen werden bestätigt. Die Halbwertszeit nimmt mit zunehmender Intensität ab, die Amplitude steigt.
-Allerdings liegt die Schwankung lediglich in der Fehlerordnung und ist somit also zu vernachlässigen. Wir wählen $I = 77 \mu W$ als
+Allerdings liegt die Schwankung lediglich in der Fehlerordnung (Diskussion in der Schlussfolgerung) und ist somit also zu vernachlässigen. Wir wählen $I = 77 \mu W$ als
 Laserintensität für die folgenden Versuche.
 
 
@@ -201,7 +201,7 @@ proportional zur Konzentration desselben ist, folgende Formel hergeleitet:
 
 
 Hierbei ist $OD_x$ die optische Dichte des jeweiligen Stoffes. Für ein Probenvolumen von $2ml$ und eine
-optische Dichte des Pheophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie in Tabelle 4.
+optische Dichte des Phäophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie in Tabelle 4.
 
 \begin{table}[h]
   \centering
@@ -219,9 +219,9 @@ optische Dichte des Pheophorbid a von $OD_{Pheo}=2.4$ ergeben sich die Werte wie
 
 
 
-Unter Reabsorption versteht man, dass ein absorbiertes und wieder abgestrahltes Photon erneut absorbiert und emmitiert wird.
+Unter Reabsorption versteht man, dass ein absorbiertes und wieder abgestrahltes Photon erneut absorbiert und emittiert wird.
 Wir erwarten also, da bei höheren optischer Dichte die Wahrscheinlichkeit für einen solchen Fall höher ist, dass die Fluoreszenzlebensdauer
-bei höheren optischer Dichte steigt, da nun ein Photon zwei Counts verursacht. Die Ergebnisse der Messung befinden sich in Tabelle 5.
+bei höheren optischer Dichte steigt, da die Reabsorption (und Reemission) durch andere Fluorophore endliche Zeit in Anspruch nimmt. Die Ergebnisse der Messung befinden sich in Tabelle 5.
 
 
 \begin{table}[h]
@@ -255,22 +255,22 @@ Nun wird die Fluoreszenzlebensdauer bei den optimalen Einstellung bestimmt. Dies
   \item optische Dichte der Probe: $OD=0.2$
 \end{itemize}
 
-Die Fluoreszenzlebensdauer ist: $$t=(5.9 \pm 0.1)ns$$
-Diese stimmt sehr gut mit dem Referenzwert in [2] überein (ebenfalls $t=(5.9 \pm 0.1)ns$). Auch der $\chi^2$-Wert weißt auf
+\noindent Die Fluoreszenzlebensdauer beträgt: $$t=(5.9 \pm 0.1)ns$$
+Diese stimmt sehr gut mit dem Referenzwert in [2] überein (ebenfalls $t=(5.9 \pm 0.1)$ ns). Auch der $\chi^2$-Wert weißt auf
 eine sehr gute Übereinstimmung mit dem Modell hin.
 
 
 
 \subsection{Pheo in versch. Ethanol-Wasser-Gemischen}
 Für diesen Versuchsteil stellen wir 7 Proben mit verschiedenem Ethanol-Wasser-Verhältnis her.
-Wir setzen in unserer $2ml$ Probe $V_{Pheo}=1ml$, so dass $V_{Rest}=1ml$. Mit $\omega= \frac{V_{Ethanol}}{V_{Rest}}$ erhalten wir:
+Wir setzen in unserer $2$ ml Probe $V_{Pheo}=1$ ml, so dass $V_{Rest}=1$ ml. Mit $\omega= \frac{V_{Ethanol}}{V_{Rest}}$ erhalten wir:
 
 \begin{table}[h]
   \centering
   \begin{tabular}{c|c|c}
     $\omega$ & $V_{H_2O}$ [$\mu$l] & $V_{Ethanol}$ [$\mu$l] \\
     \hline
-     5\%     & 950                 & 50                     \\
+     5\%     & 950                 & 50                      \\
      15\%    & 850                 & 150                    \\
      30\%    & 700                 & 300                    \\
      45\%    & 550                 & 450                    \\
@@ -291,10 +291,10 @@ Aggregation neigt.
   \caption{Messung der Fluoreszenzlebensdauer für verschiedene Ethanol-Wasser-Verhältnisse}
 \end{figure}
 
-Die Ergebnisse sind in Abbildung 3 veranschaulicht. Man erkennt, dass die Fluoreszenzdauer sinkt, je höhere der Anteil von Wasser bzw.
+Die Ergebnisse sind in Abbildung 3 veranschaulicht. Man erkennt, dass die Fluoreszenzdauer sinkt, je höher der Anteil von Wasser bzw.
 umso niedriger der Anteil von Ethanol ist. Hierbei fällt die Fluoreszenzdauer bei Wasseranteilen $>50\%$ stärker ab, als bei Anteilen $<50\%$.
-Der erste Messpunkt wurde bei der Regression nicht einbezogen, seine Lage legt nahe, dass es sich um eine Fehlmessung handelt. Eine schlechte Entscheidung
-der Messenden war es eine Probe mit $OD = 1.5$ für die Messung zu verwenden, wo doch in Abschnitt 2.1.3 festgestellt wurde, dass hier der
+Der erste Messpunkt wurde bei der Regression nicht einbezogen. Seine Lage legt nahe, dass es sich um eine Fehlmessung handelt. Eine schlechte Entscheidung
+der Messenden war es, eine Probe mit $OD = 1.5$ für die Messung zu verwenden, wo doch in Abschnitt 2.1.3 festgestellt wurde, dass hier der
 Reabsorptionseffekt eine wesentliche Rolle spielt.
 
 
@@ -308,7 +308,7 @@ Reabsorptionseffekt eine wesentliche Rolle spielt.
 \subsubsection{Wirkungsweise von Triton X-100}
 "Triton X-100 ist ein Detergenz, welches Pheophorbid in Mizellen einbettet und so wasserlöslich
 macht." ([1]) Wir geben nun zu der Probe mit höchstem Wasseranteil 2 Tropfen einer $10\%$igen Stammlösung Triton X-100
-hinzu und erwarten, dass hierdurch die Fluoreszenzdauer wieder auf das optimale Niveau wie in Abschnitt 2.2 ansteigt.
+hinzu und erwarten, dass hierdurch (Mizellenbildung) die Fluoreszenzdauer wieder auf das optimale Niveau wie in Abschnitt 2.2 ansteigt.
 
 
 \begin{figure}[h]
@@ -318,27 +318,13 @@ hinzu und erwarten, dass hierdurch die Fluoreszenzdauer wieder auf das optimale 
 \end{figure}
 
 Die Fluoreszenzlebensdauer ist, wie nach Erwartung angestiegen, allerdings über die Fluoreszenzdauer in 2.2 hinaus. Dies liegt daran, dass
-die Probe eine optische Dichte von $OD = 1.5$, der Reabsorptionseffekt trägt hier, wie in Abschnitt ZAHL gezeigt, eine tragende Rolle. Dies war
+die Probe eine optische Dichte von $OD = 1.5$ hat. Der Reabsorptionseffekt trägt hier, wie in Abschnitt 2.1.3 gezeigt, eine tragende Rolle. Dies war
 eine für präzise Messergebnisse ungünstige Wahl der Experimentatoren. Ebenso schlägt sich dies in einem (im Vergleich zu allen anderen Fits)
-schlechten Chi2-Wert von $\chi^2=2.94$ nieder. Nichtsdestotrotz zeigt die Messung, dass Phäophorbid a durch das Triton X-100 wieder fluoresziert.
-
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\textwidth/2]{Bilder/FitTriton.jpg}
-  \caption{Messung der Fluoreszenzlebensdauer mit Triton X-100, $t = 5.97ns$, $A = 0.26[a.u.]$, $\chi^2 = 2.94$}
-\end{figure}
-
-Die Fluoreszenzlebensdauer ist, wie nach Erwartung angestiegen, allerdings über die Fluoreszenzdauer in 2.2 hinaus. Dies liegt daran, dass
-die Probe eine optische Dichte von $OD = 1.5$, der Reabsorptionseffekt trägt hier, wie in Abschnitt 2.1.3 gezeigt, eine tragende Rolle. Dies war
-eine für präzise Messergebnisse ungünstige Wahl der Experimentatoren. Ebenso schlägt sich dies in einem (im Vergleich zu allen anderen Fits)
-schlechten Chi2-Wert von $\chi^2=2.94$ nieder. Nichtsdestotrotz zeigt die Messung, dass Phäophorbid a durch das Triton X-100 wieder fluoresziert.
-
-
+schlechten Chi2-Wert von $\chi^2=2.94$ nieder. Nichtsdestotrotz zeigt die Messung, dass Phäophorbid a durch das Triton X-100 wieder (besser) fluoresziert.
 
 
 \subsubsection{Anisotropie}
-Werden Fluorophore mit linear polarisiertem Licht bestrahlt absorbieren bevorzugt Moleküle, bei denen der Winkel zwischen Übergangsdipolmoment und Polarisationsebene des einfallenden Lichts klein ist. Dies führt i.A. dazu, dass das durch Fluoreszenz emittiertes Licht ebenso linear polarisiert ist - die sog. Fluoreszenzpolarisation. Diese intrinsische Anisotropie ist als Maß für den Grad der Polarisation des Emissionslichts abhängig von den Intensitäten des parallel bzw. senkrecht polarisierten Fluoreszenzlichts. $$ r = \frac{I_\parallel-I_\perp}{I_\parallel+2 I_\perp} $$ Zur quantitativen Bestimmung werden jene Polarisationsintensitäten bei fester (linearer) Polarisation des einfallenden Lichts gemessen. Die sog. Rotationsabklingzeit $\tau_{Rot}$ bestimmt gemäß eines exponentiellen Abfalls maßgeblich den zeitlichen Abfall der Anisotropie. Sie ist, neben der Viskosität und Temperatur, v.a. von der Molekülgröße (Volumen) abhängig. Es wurden zwei Proben untersucht: Pheo in Ethanol und Pheo in einem Wasser/Triton-Gemisch.
+Werden Fluorophore mit linear polarisiertem Licht bestrahlt absorbieren bevorzugt Moleküle, bei denen der Winkel zwischen Übergangsdipolmoment und Polarisationsebene des einfallenden Lichts klein ist. Dies führt i.A. dazu, dass das durch Fluoreszenz emittierte Licht ebenso linear polarisiert ist - die sog. Fluoreszenzpolarisation. Diese intrinsische Anisotropie ist als Maß für den Grad der Polarisation des Emissionslichts abhängig von den Intensitäten des parallel bzw. senkrecht polarisierten Fluoreszenzlichts: $$ r = \frac{I_\parallel-I_\perp}{I_\parallel+2 I_\perp} $$ Zur quantitativen Bestimmung werden jene Polarisationsintensitäten bei fester (linearer) Polarisation des einfallenden Lichts gemessen. Die sog. Rotationsabklingzeit $\tau_{Rot}$ bestimmt gemäß eines exponentiellen Abfalls maßgeblich den zeitlichen Abfall der Anisotropie. Sie ist, neben der Viskosität und Temperatur, v.a. von der Molekülgröße (Volumen) abhängig. Es wurden zwei Proben untersucht: Phäo in Ethanol und Phäo in einem Wasser/Triton-Gemisch.
 
 \begin{figure}[H]
   \centering
@@ -359,12 +345,12 @@ Deutlich zu erkennen auf den Abb. 6 und 7 sind die beiden Anisotropie-Peaks bei 
 
 Den Erwartungen entsprechend ist die Abklingzeit der Anisotropie bei der Probe mit Ethanol (Abb. 5) kürzer als bei jener mit dem Triton/Wasser-Gemisch (Abb. 6). Die Rotationsabklingzeit $\tau_{Rot}$ nimmt gemäß $$ \tau_{Rot}=\frac{\eta V}{k_B T} $$
 mit größerem Volumen zu, wohingegen die Anisotropieabklingzeit nach $$ r= c \cdot e^{-\nicefrac{t}{\tau_{Rot}}}+d $$
-invers proportional zur Rotationsabklingzeit ist. Das kürzere Abklingen der Anisotropie von Pheo in Wasser/Triton als in Ethanol spricht also für eine längere Rotationsabklingzeit und damit für ein größeres Volumen der fluoreszierenden Moleküle. Dies weist deutlich auf die erwartete Einbettung von Pheo in Mizellen im Wasser/Triton-Gemisch hin.
+invers proportional zur Rotationsabklingzeit ist. Das kürzere Abklingen der Anisotropie von Phäo in Wasser/Triton als in Ethanol spricht also für eine längere Rotationsabklingzeit und damit für ein größeres Volumen der fluoreszierenden Moleküle. Dies weist deutlich auf die erwartete Einbettung von Phäo in Mizellen im Wasser/Triton-Gemisch hin.
 
 
 
 \section{Schlussfolgerungen}
-Der ermittelte Basiswert für die Fluoreszenzlebensdauer von $t=(5.9 \pm 0.1)$ ns deckt sich genau mit dem Referenzwert aus [2] (S. 41, Tabelle).
+Der ermittelte Basiswert für die Fluoreszenzlebensdauer von $t=(5.9 \pm 0.1)$ ns deckt sich genau mit dem Referenzwert aus [2] (S. 41, Tabelle). Die Unsicherheit der Zeitmessung wurde aufgrund des Fehlens von Angaben zu Geräteungenauigkeiten auf $\Delta t=0,1$ ns abgeschätzt. 
 
 Die auftretenden Störeffekte (Peak-Pile-Up, Reabsorption) konnten qualitativ nachgewiesen werden.
 
@@ -376,7 +362,7 @@ Die Zugabe von Triton X-100 zur Probe mit maximalem Wasseranteil lässt die Fluo
 Die Anisotropieverhalten von Phäo in Ethanol und Phäo in Triton X-100 (Abs. 2.4.2) lassen auf Mizellenbildung schließen.
 
 
-
+\newpage
 
 \section{Anhang}
 
